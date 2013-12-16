@@ -1,0 +1,34 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://www.nshiportal.com/tevaimpactdemo/Account/LogOn"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "UserName"
+      },
+      "text": "admin1"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "Password"
+      },
+      "text": "Abcdef12"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//form[@class='form-signin']//button[.='Log in']"
+      }
+    }
+  ]
+}
